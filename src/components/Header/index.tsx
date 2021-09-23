@@ -1,11 +1,14 @@
 import styles from './header.module.scss';
 import commonStyles from '../../styles/common.module.scss';
+import Link from 'next/link';
 
 export default function Header() {
   return (
     <header className={styles.header}>
       <div className={commonStyles.container}>
-        <img src="/images/logo.svg" alt="spacetraveling" />
+        <Link href="/">
+          <img src="/images/logo.svg" alt="logo" />
+        </Link>
       </div>
     </header>
   );

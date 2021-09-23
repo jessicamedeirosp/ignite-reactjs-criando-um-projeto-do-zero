@@ -6,7 +6,7 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   return (
     <>
       <Header></Header>
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </>
   )
 }
